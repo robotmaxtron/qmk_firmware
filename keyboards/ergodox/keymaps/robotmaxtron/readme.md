@@ -1,0 +1,3 @@
+# robotmaxtron ErgoDox Configuration
+
+This is a work in progress...
