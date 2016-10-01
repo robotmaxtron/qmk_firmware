@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,       KC_Q,        KC_W,   KC_E,   KC_R,   KC_T,   KC_LBRC,
         KC_CAPS,      KC_A,        KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,      KC_Z,        KC_X,   KC_C,   KC_V,   KC_B,   KC_FN1,
-        KC_LCTL,      KC_LGUI,     KC_LALT,KC_NO,  KC_NO,
+        KC_LCTL,      KC_LGUI,     KC_LALT,KC_FN2, KC_FN3,
                                                        KC_ESC,KC_INS,
                                                               KC_HOME,
                                                KC_ENT,KC_LSFT,KC_END,
@@ -139,7 +139,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM fn_actions[] = {
-    [1] = ACTION_LAYER_MOMENTARY(SYMB)                // FN1 - Momentary Layer 1 (Symbols)
+    [1] = ACTION_LAYER_MOMENTARY(SYMB),                // FN1 - Momentary Layer 1 (Symbols)
+    [2] = ACTION_LAYER_TOGGLE(SYMB),
+    [3] = ACTION_LAYER_TOGGLE(MDIA),
 };
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
