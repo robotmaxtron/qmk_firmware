@@ -188,8 +188,5 @@ void matrix_scan_user(void) {
         default:
             // none
             break;
-	if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
-	    ergodox_right_led_3_on();
-    							   }
-
+};
 };
