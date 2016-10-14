@@ -176,7 +176,6 @@ void matrix_scan_user(void) {
     ergodox_board_led_off();
     ergodox_right_led_1_off();
     ergodox_right_led_2_off();
-    ergodox_right_led_3_off();
     switch (layer) {
       // TODO: Make this relevant to the ErgoDox EZ.
         case 1:
@@ -188,13 +187,15 @@ void matrix_scan_user(void) {
         default:
             // none
             break;
+		   }
 };
 void led_set_kb(uint8_t usb_led) {
     if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
         // Turn capslock on
         ergodox_right_led_3_on();
-    } else {
+    } else{
         // Turn capslock off
         ergodox_right_led_3_off();
-}
+	  }
+	
 };
