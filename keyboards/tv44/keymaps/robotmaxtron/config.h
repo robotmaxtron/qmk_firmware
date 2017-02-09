@@ -2,7 +2,8 @@
 #define CONFIG_USER_H
 
 #include "../../config.h"
-#define BACKLIGHT_LEVELS 3
 // place overrides here
-
+#define BACKLIGHT_LEVELS 3
+#define BACKLIGHT_PIN B2
+#define BACKLIGHT_ON_STATE 1
 #endif
