@@ -37,6 +37,9 @@ Functions to controls LED clusters
 	
 ======================
 
+## Bugs
+On the GH60 Rev.C, the fn and right shift keys are flipped and your keymap will need to reflect those two keys switched around.
+
 ## Quantum MK Firmware
 
 For the full Quantum feature list, see [the parent readme.md](/readme.md).
